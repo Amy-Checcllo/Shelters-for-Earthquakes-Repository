@@ -1,0 +1,34 @@
+Reunión 24/08/2024
+
+Lo que se tiene:
+* Github: https://github.com/Amy-Checcllo/Shelters-for-Earthquakes-Repository 
+* Albergues potenciales.ipynb: Aquí se tiene la data de los albergues potenciales (centros recreativos y deportivos) caracterizados con su vulnerabilidad sismica (infraestructura y economía), riesgo sismico (suelo), población (cantidad por manzana), densidad, cobertura de agua, cobertura de electricidad y rastreabilidad. 
+* Centros de salud.ipynb: Aquí se tiene el listado de centros de salud con su respectiva vulnerabilidad sismica, riesgo sismico, población de manzana, tipo de centro de salud.
+
+Lo que hay que hacer:
+* Reducir de 7420 albergues potenciales encontrados a +300.
+- Filtrar:
+  . Los que están en uso
+  . Que tiene cercanía a hospital
+  . Que tiene baja vulnerabilidad
+  . Que tiene bajo riesgo sísmico
+  . Cobertura de agua
+  . Cobertura de electricidad / flexible: 
+  . Checar que los albergues de la municipalidad estén integrados en la base de datos.
+  . Un ratio de 2km para verificar si existe población a la redonda que salvaguardar.
+- Técnicas:
+  . Clustering
+  . Filtros
+* Reducir los centros de salud de 647 a +300 (igual cantidad de albergues):
+- Filtrar:
+  . Tipo de centro de salud
+  . Vulnerabilidad baja
+  . Categoría de nivel de atención
+  . Obtener el aforo del hospital
+- Técnicas:
+  . Clustering
+  . Filtros
+
+* Completar la caracteriazción de los albergues:
+- Calcular la población a la redonda de los albergues potenciales basándose en un ratio de  XX (Proporcional al tamaño del aforo = Aforo)
+- Calcular le aforo por cada albergue potencial
